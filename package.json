@@ -1,5 +1,5 @@
 {
-  "name": "software-license-key-without-fs",
+  "name": "software-licence-key-without-fs",
   "version": "1.0.1",
   "description": "Library for generating and validating software license keys with data embedded in the key. Forked version without fs support.",
   "main": "index.js",

@@ -1,4 +1,4 @@
-# Software License Key Without FS
+# Software Licence Key Without FS
 
 This is a library for generating and validating software license keys with data embedded in the license key.
 
