@@ -1,6 +1,6 @@
 # Software Licence Key Without FS
 
-This is a library for generating and validating software license keys with data embedded in the license key.
+This is a library for generating and validating software license keys with data embedded in the license key. Fork from https://github.com/timtutt/software-license-key.
 
 
 ## Installation
