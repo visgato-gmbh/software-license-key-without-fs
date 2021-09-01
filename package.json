@@ -1,14 +1,14 @@
 {
-  "name": "software-license-key",
+  "name": "software-license-key-without-fs",
   "version": "1.0.1",
-  "description": "Library for generating and validating software license keys with data embedded in the key.",
+  "description": "Library for generating and validating software license keys with data embedded in the key. Forked version without fs support.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timtutt/software-license-key.git"
+    "url": "git+https://github.com/visgato-gmbh/software-license-key"
   },
   "keywords": [
     "software",
@@ -17,12 +17,12 @@
     "generator",
     "validator"
   ],
-  "author": "Tim Tutt <tim@timtutt.com>",
+  "author": "Tim Tutt <tim@timtutt.com>, visgato GmbH",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/timtutt/software-license-key/issues"
+    "url": "https://github.com/visgato-gmbh/software-license-key/issues"
   },
-  "homepage": "https://github.com/timtutt/software-license-key#readme",
+  "homepage": "https://github.com/visgato-gmbh/software-license-key#README.md",
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "node-rsa": "^0.4.2"

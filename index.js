@@ -1,8 +1,8 @@
 const NodeRSA = require('node-rsa');
 const CryptoJS = require('crypto-js');
-const fs = require('fs');
+// const fs = require('fs');
 
-class SoftwareLicenseKey {
+class SoftwareLicenseKeyWithoutFS {
 
   constructor(cert=null) {
     if (cert == null) {
@@ -79,40 +79,6 @@ class SoftwareLicenseKey {
     }
   }
 
-  /**
-   * Exports the private key in PEM format
-  */
-  exportPrivateKey(filePath) {
-
-    if (!this.key.isPrivate()) {
-      throw new Error("The key is not a private key. Cannot export private key from public key.");
-      return;
-    }
-    if (filePath == null) {
-      return this.key.exportKey();
-    } else {
-      try {
-        fs.writeFileSync(filePath, this.key.exportKey());
-      } catch(e) {
-        throw e; //error writing the private key out to disk.
-      }
-    }
-  }
-
-  /**
-   * Exports the public key
-  */
-  exportPublicKey(filePath) {
-    if (filePath == null) {
-      return this.key.exportKey('public');
-    } else {
-      try {
-        fs.writeFileSync(filePath, this.key.exportKey('public'));
-      } catch(e) {
-        throw e; //error writing the private key out to disk.
-      }
-    }
-  }
 }
 
-module.exports = SoftwareLicenseKey;
+module.exports = SoftwareLicenseKeyWithoutFS;

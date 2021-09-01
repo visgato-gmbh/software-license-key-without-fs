@@ -30,18 +30,8 @@ openssl rsa -pubout -in private_key.pem -out public_key.pub
 
 You can pass these keys to the library by calling the constructor with a parameter that is a buffer of the key itself.
 
-  * With key external key files:
-  ```javascript
-  const fs = require('fs');
+  * With key external key files: use the original package (https://github.com/timtutt/software-license-key).
 
-  //instantiate with the private key
-  var privateKeyFile = fs.readFileSync('/path/to/cert.pem', 'utf8');
-  var generator = new SoftwareLicenseKey(privateKeyFile);
-
-  //instantiate with the public key
-  var publicKeyFile = fs.readFileSync('/path/to/cert.pub', 'utf8');
-  var validator = new SoftwareLicenseKey(publicKeyFile);
-  ```
   * With string version of keys
 
   ```javascript
